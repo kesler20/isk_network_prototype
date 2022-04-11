@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IskNetwork - Home Page</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/icon.PNG') }}">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper flex-column">
+        <div class="search-title flex-row">
+            <h1>Search</h1>
+        </div>
+        <navbar class="nav flex-row">
+            <div class="search-bar flex-row">
+                <input type="text" name="search-bar" id="search-bar" placeholder="Artists, Engineers or Activists...">
+                <button type="submit">
+                    <i class="fa fa-search fa-lg"></i>
+                </button>
+            </div>
+        </navbar>
+        <div class="categories flex-column">
+            <div class="category-title">
+                <h2>Categories</h2>
+            </div>
+            <div class="category-card grid">
+                <a href="http://engineering">
+                    <div class="card engineering">
+                        <p>Engineering</p>
+                        <img src="{{ url_for('static', filename='img/engineering_card_img.jpg') }}" alt="" srcset="">
+                    </div>
+                </a>
+                <a href="http://music">
+                    <div class="card music">
+                        <p>Music</p>
+                        <img src="{{ url_for('static', filename='img/music_card_img.jpg') }}" alt="" srcset="">
+                    </div>
+                </a>
+                <a href="http://politics">
+                    <div class="card politics">
+                        <p>Politics</p>
+                        <img src="{{ url_for('static', filename='img/politics_card_img.jpg') }}" alt="" srcset="">
+                    </div>
+                </a>
+                <a href="http://philosophy">
+                    <div class="card philosophy">
+                        <p>Philosophy</p>
+                        <img src="{{ url_for('static', filename='img/philosophy_card_img.jpg') }}" alt="" srcset="">
+                    </div>
+                </a>
+                <a href="http://business">
+                    <div class="card Business">
+                        <p>Business</p>
+                        <img src="{{ url_for('static', filename='img/business_card_img.png') }}" alt="" srcset="">
+                    </div>
+                </a>
+                <a href="http://create">
+                    <div class="card create">
+                        <p>Create</p>
+                        <img src="{{ url_for('static', filename='img/create_card_img.jpg') }}" alt="" srcset="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <navbar class="nav flex-row nav-btns">
+                <i class="fa fa-home fa-lg"></i>
+                <i class="fa fa-project-diagram fa-lg"></i>
+                <i class="fa fa-share fa-lg"></i>
+                <i class="fa fa-user-friends fa-lg"></i>
+            </div>
+        </navbar>
+    </div>
+</body>
+</html>
+
+
