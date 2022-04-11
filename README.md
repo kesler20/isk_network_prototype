@@ -1,3 +1,4 @@
-# igem
+# IskNetwork
 
-This is a simple UI proposal for the toolkit which can be viewed at https://igemtoolkit.herokuapp.com/
+This is a simple ##Mobile UI proposal for the IskNetwork which can be viewed at https://isknetwork.herokuapp.com/
+![test_isk_network](readme_img.PNG)
